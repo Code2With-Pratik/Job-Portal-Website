@@ -34,7 +34,6 @@ const Signup = () => {
     }
     const submitHandler = async (e) => {
         e.preventDefault();
-        // console.log(input); 
         const formData = new FormData();    //formdata object
         formData.append("fullname", input.fullname);
         formData.append("email", input.email);
@@ -81,7 +80,7 @@ const Signup = () => {
                             value={input.fullname}
                             name="fullname"
                             onChange={changeEventHandler}
-                            placeholder="Enter Full Name"
+                            placeholder="patel"
                         />
                     </div>
                     <div className='my-2'>
@@ -91,7 +90,7 @@ const Signup = () => {
                             value={input.email}
                             name="email"
                             onChange={changeEventHandler}
-                            placeholder="example@gmail.com"
+                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='my-2'>
@@ -101,7 +100,7 @@ const Signup = () => {
                             value={input.phoneNumber}
                             name="phoneNumber"
                             onChange={changeEventHandler}
-                            placeholder="Enter Your Number"
+                            placeholder="8080808080"
                         />
                     </div>
                     <div className='my-2'>
@@ -111,7 +110,7 @@ const Signup = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="Password"
+                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='flex items-center justify-between'>

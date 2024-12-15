@@ -28,7 +28,6 @@ const Login = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        // console.log(input); 
         try {
             dispatch(setLoading(true));
             const res = await axios.post(`${USER_API_END_POINT}/login`, input, {
@@ -67,7 +66,7 @@ const Login = () => {
                             value={input.email}
                             name="email"
                             onChange={changeEventHandler}
-                            placeholder="example@gmail.com"
+                            placeholder="patel@gmail.com"
                         />
                     </div>
 
@@ -78,7 +77,7 @@ const Login = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="Password"
+                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='flex items-center justify-between'>
