@@ -44,3 +44,11 @@ export const getCompany = async (req, res) => {
         console.log(error);
     }
 }
+// get company by id
+export const getCompanyById = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.log(error);
+    }
+}
