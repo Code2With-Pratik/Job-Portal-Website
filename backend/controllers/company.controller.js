@@ -30,3 +30,11 @@ export const registerCompany = async (req, res) => {
         console.log(error);
     }
 }
+export const getCompany = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
