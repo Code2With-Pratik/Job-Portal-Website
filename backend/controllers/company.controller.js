@@ -67,3 +67,10 @@ export const getCompanyById = async (req, res) => {
         console.log(error);
     }
 }
+export const updateCompany = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.log(error);
+    }
+}
