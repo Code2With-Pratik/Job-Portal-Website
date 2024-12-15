@@ -21,15 +21,15 @@ export const applyJob = async (req, res) => {
             });
         }
 
-          // check if the jobs exists
-          const job = await Job.findById(jobId);
-          if (!job) {
-              return res.status(404).json({
-                  message: "Job not found",
-                  success: false
-              })
-          }
-          // create a new application
+        // check if the jobs exists
+        const job = await Job.findById(jobId);
+        if (!job) {
+            return res.status(404).json({
+                message: "Job not found",
+                success: false
+            })
+        }
+        // create a new application
         const newApplication = await Application.create({
             job:jobId,
             applicant:userId,
